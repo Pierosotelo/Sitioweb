@@ -8,6 +8,9 @@
         margin: 0;
         padding: 0;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
       }
 
       header {
@@ -18,22 +21,32 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        position: absolute;
-        top: 0px;
-        left: 80px;
+        margin-top: 10px;
       }
 
       .logo img {
-        height: 70px;
-        position: absolute;
-        top: 0px;
-        left: -75px;
+        height: 100px;
+        margin-right: 10px;
       }
 
-      .buttons {
-        position: absolute;
-        top: 20px;
-        right: 20px;
+      .section-title {
+        color: red;
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 20px;
+      }
+
+      .text-content {
+        width: 80%;
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: justify;
+      }
+
+      footer {
+        margin-top: auto;
+        padding: 20px;
+        background-color: #f1f1f1;
       }
 
       .buttons button {
@@ -46,126 +59,57 @@
         font-weight: bold;
         cursor: pointer;
       }
-
-      .main-title {
-        font-size: 24px;
-        font-weight: bold;
-        margin: 20px 0;
-      }
-
-      
-
-      .main-image img {
-        width: 80%;
-        max-width: 700px;
-        border-radius: 5px;
-      }
-
-      .section-title {
-        color: red;
-        font-weight: bold;
-        font-size: 18px;
-        margin-top: 20px;
-      }
-
-      .color-title {
-        color: yellow;
-        font-weight: bold;
-        font-size: 18px;
-        margin-top: 20px;
-      }
-      .piero-title {
-        color: blue; 
-        font-weight: bold;
-        font-size: 18px;
-        margin-top: 20px;
-      }
-
-      .text-content {
-        width: 80%;
-        max-width: 800px;
-        margin: 0 auto;
-        text-align: justify;
-      }
-      .imagen-enlace {
-        display: inline-block;
-        position: relative;
-      }
-
-      .imagen-enlace img {
-        width: 300px;
-        height: auto;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: transform 0.3s ease;
-      }
-
-      .imagen-enlace img:hover {
-        transform: scale(1.05);
-      }
     </style>
   </head>
   <body>
     <div class="logo">
-      <img src="https://avatars.githubusercontent.com/u/28660545?s=280&v=4" alt="Imagen de la web">
-      <h2>LENGUAJE DE<br>DESARROLLO WEB</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="Imagen CSS">
+      <h2>LENGUAJE<br>CSS</h2>
     </div>
 
-    <div class="buttons">
-      <button onclick="window.open('https://script.google.com/macros/s/AKfycby6EySZZ81ptHlLKhyjqQjTkf4bywkHjzbFWvzuk8jDochuQ23Zjj3dBL6GAp0QEJKQ/exec', '_blank')">HTML</button>
-      <button onclick="window.open('https://script.google.com/macros/s/AKfycby6alrOWWMZbCRXEuroaO04XbiF4nV6A2_k6u1oGQ-sGdxzEY34StgRFSg8gDvgTAEf/exec', '_blank')">CSS</button>
-      <button onclick="window.open('https://script.google.com/a/macros/vallegrande.edu.pe/s/AKfycbzPDN5x2otjktPyBbTUoIaACJq229TrzPJnaiMXdBdLzjDsAsmSftBvEmHHq8h33_dBDA/exec', '_blank')">JavaScript</button>
-    </div>
-
-    <div class="main-title">Lenguaje de desarrollo web</div>
-
-    <div class="main-image">
-      <img src="https://indexdesarrollo.com/wp-content/uploads/2017/05/lenguajes-de-programacion-web.png" alt="Imagen institucional">
-    </div>
-
-    <div class="section-title">¿Qué es un lenguaje de desarrollo web?</div>
-
+    <div class="section-title">¿Qué es un CSS?</div>
     <div class="text-content">
       <p>
-        Un lenguaje de desarrollo web es aquel que nos apoya para poder realizar una página o un servicio web, siendo así que esto se llega a utilizar mayormente por programadores y por quienes desean llevar más allá su imaginación. En este proyecto podrás visualizar 3 lenguajes de desarrollo web para que así llegues a tener más conocimiento de estos lenguajes.
+        El lenguaje de programación CSS o Hoja de estilo en Cascada es aquel que se utiliza para poder describir la presentación de un documento  escrito en un lenguaje de marcado siendo así teniendo cosas iguales qie el HTML, siendo así que en este caso CSS se encarga de la apariencia visual de la página web, siendo así que este controla el diseño de la creación, los colores, la fuente y sobre todo la disposición de los elementos.
       </p>
     </div>
 
-    <div class="section-title">Visión y Misión</div>
+    <div class="section-title">¿Por qué CSS se llama "Hoja de estilo en Cascada"?</div>
     <div class="text-content">
-      <p>La misión es la declaración del propósito actual ya sea de una empresa u organización, su razón de ser y lo que busca lograr en el presente con lo que va a realizar, en cambio la visión es una declaración de las aspiraciones futuras de una empresa u organización, sus objetivos cmayormente siempre son a largo plazo y cómo se llegaran a ver en un futuro.
+      <p>
+        Esto se llama así por la misma razón que cuando hay varios estilos aplicados todo al misml elemento lo cual gracias a esto CSS siguen una serie de reglas prioridades para así esto elija cual estilo se llegara a utilizar para así este poder ejecutarse de una buena manera.
       </p>
     </div>
 
-    <div class="color-title">Visión</div>
+    <div class="section-title">¿Que se puede hacer con CSS?</div>
     <div class="text-content">
-      <p>La visión de este sitio web es que a futuro llegue a brindar muchas más información de la que esta brindando ahora siendo así que este llegue a tomar muchos más lenguajes de programación como es: python, Java, mySQL, C++,, Kotlin, Go,PHP, SQL y etc., siendo así para que iusuarios que lleguen a entrar a nuestro sitio web tenga mucha más información sobre como es el mundo de la programación</p>
+      <ul>
+        <li>Cambiar el fondo y tambien los colores.</li>
+        <li>Modificar el tipo, tamaño y sobre todo el estilo de letra.</li>
+        <li>Añadir márgenes.</li>
+        <li>Dividir la página en secciones y columnas.</li>
+        <li>Alinear textos e imagenes.</li>
+        <li>Hacer diseño adaptable  a todos los dispositivos moviles.</li>
+        <li>Aplicar animaciones y transiciones para poder interactuar con el usuario.</li>
+        <li>Implementación para más creaciones como menús, tarjeta y botones atractivos.</li>
+      </ul>
     </div>
 
-    <div class="section-title">Misión</div>
+    <div class="section-title">¿Que herramientas ayudan a trabajar con CSS?</div>
     <div class="text-content">
-      <p>La misión que tiene este sitio web es apoyar a todos los usuarios que recién estan empezando en el mundo de la programación siendo así que brinde mucha información a todos los usuarios interesados en este mundo, por la cual deseamos brindar información de los principales lenguajes de programación.</p>
+      <ul>
+        <li>Inspectores de navegador.</li>
+        <li>VSC(Visual Study Code).</li>
+        <li>Extenciones del CSS.</li>
+        <li>Y etc.....</li>
     </div>
 
-    <div class="color-title">¿Quienes somos?</div>
-    <div class="text-content">
-      <p>Soy un estudiante del Instituto de Educación superior Valle Grande, el cual esta realizando un sitio web para poder brindar información a diferentes personas que estan empesando en este mudno de la programación siendo así que este proyecto espero que ayude a muchas personas con diferentes trabajos que tienen.</p>
-    </div>  
-
-    <div class= "section-title">CANAL DE YOUTUBE</div>
-    <a class="imagen-enlace" href="https://www.youtube.com/@PieroJesusSoteloMedrano" target="_blank">
-      <img src="https://i.pinimg.com/originals/98/69/9f/98699f9fdb9518e4c2f13f1b00488e01.gif" alt="Youtube">
-    </a>
-
-    <div class= "piero-title">LINKEDIN</div>
-    <a class="imagen-enlace" href="https://www.linkedin.com/in/piero-jesus-sotelo-medrano-610b35359/" target="_blank">
-      <img src="https://cdn.dribbble.com/userupload/42224959/file/original-67dc55d76725e0d116882a5b9f24dd44.gif" alt="Linkedin">
-    </a>
-
-    <div class= "piero-title">FACEBOOK</div>
-    <a class="imagen-enlace" href="https://www.facebook.com/pierojesus.sotelomedrano" target="_blank">
-      <img src="https://i.pinimg.com/originals/4f/da/a3/4fdaa3d2c546b7715b18fb814edbc0a2.gif" alt="Facebook">
-    </a>
+    <footer>
+      <div class="buttons">
+        <button onclick="window.open('https://script.google.com/macros/s/AKfycbz2CaKGT3OMjYW_hhBYqV-rdweB8bKmo_vg5PYslt2TUmOpl0muA8ESbH6P8V8X0kIpEw/exec', '_blank')">
+          REGRESAR
+        </button>
+      </div>
+    </footer>
   </body>
 </html>
-
